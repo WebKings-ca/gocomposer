@@ -40,7 +40,7 @@ if [[ "$mainDir" = "$cwd" ]]; then
 
         chmod 777 $mainDir/CurrEnv.txt;
 
-        drush sql-conf --show-passwords > CurrEnv.txt;
+        $mainDir/vendor/bin/drush sql-conf --show-passwords > CurrEnv.txt;
 
     fi
 
@@ -50,7 +50,7 @@ if [[ "$mainDir" = "$cwd" ]]; then
 
         cd $mainDir;
 
-        drush sql-dump --result-file $mainDir/backup/old_db.sql;
+        $mainDir/vendor/bin/drush sql-dump --result-file $mainDir/backup/old_db.sql;
 
         tar -zcvf archive_original.tar.gz .;
 
