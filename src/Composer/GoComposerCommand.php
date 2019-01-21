@@ -1095,7 +1095,7 @@ class GoComposerCommand extends BaseCommand
 
         $this->io->section('Current Step: Using Drush to update the Database... Press Enter to Continue...');
 
-        $finalOutput = shell_exec('cd '.$MainDir.'&& drush updb');
+        $finalOutput = shell_exec('cd '.$MainDir.'&&'.$MainDir.'/vendor/bin/drush updb');
 
         echo $finalOutput;
     }
