@@ -922,11 +922,11 @@ class GoComposerCommand extends BaseCommand
                             $flag_local = false;
                         }
                     }
+                    file_put_contents($new_file, $modified_lines);
                 }
 
 
 
-                file_put_contents($new_file, $modified_lines);
 
 
                 include $new_file;
