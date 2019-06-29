@@ -95,6 +95,8 @@ composer gocomposer
 
 _You can watch a demo for using this Plug-in [here](https://www.youtube.com/watch?v=13tLIoSKr0s&feature=youtu.be)_
 
+[![Drupal 8 GoComposer Demo](https://img.youtube.com/vi/13tLIoSKr0s/0.jpg)](https://vimeo.com/337208342)
+
 ## Troubleshooting
 
 > If you are unable to require `webkings-ca/gocomposer` due to your current Configuration try the following:
