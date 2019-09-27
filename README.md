@@ -97,6 +97,12 @@ _You can watch a demo for using this Plug-in [here](https://www.youtube.com/watc
 
 [![Drupal 8 GoComposer Demo](https://img.youtube.com/vi/13tLIoSKr0s/0.jpg)](https://youtu.be/13tLIoSKr0s)
 
+## Final Folder Structure
+
+_After Running GoComposer your site structure will be:_
+
+![Final Folder Structure](https://webkings.ca/sites/default/files/New%20Folder%20Structure.png)
+
 ## Troubleshooting
 
 > If you are unable to require `webkings-ca/gocomposer` due to your current Configuration try the following:
