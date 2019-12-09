@@ -1016,6 +1016,9 @@ class GoComposerCommand extends BaseCommand
             'docroot',
             'web',
             'htdocs',
+            'httpdocs',
+            'public_html',
+            'html',
         ];
 
         $project_found = false;
@@ -1048,7 +1051,7 @@ class GoComposerCommand extends BaseCommand
             $this->project_root_found = true;
         }
 
-        if (!(isset($this->drupalRoot))) {
+        if ((!(isset($this->drupalRoot))) || ($this->drupalRoot == "")) {
             throw new \Exception("Drupal Root is Not set.... Please change directories to a valid Drupal 8 application. Make sure you are in the correct directory...");
         }
     }
