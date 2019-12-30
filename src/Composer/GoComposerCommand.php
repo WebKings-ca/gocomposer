@@ -576,7 +576,7 @@ class GoComposerCommand extends BaseCommand
     {
         if (file_exists($this->drupalRoot . "/core/lib/Drupal.php")) {
             $bootstrap =  file_get_contents($this->drupalRoot . "/core/lib/Drupal.php");
-            preg_match('|(const VERSION = \')(\d\.\d\.\d)\';|', $bootstrap, $matches);
+            preg_match('|(const VERSION = \')(\d\.\d\.\d*)\';|', $bootstrap, $matches);
             if (array_key_exists(2, $matches)) {
                 return $matches[2];
             }
